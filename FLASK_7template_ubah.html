@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Edit Data Produk</h1>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Nama Produk</label>
+                <input type="text" name="nama_produk" class="form-control" value="{{ data.nama_produk }}" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Jenis Produk</label>
+                <select name="jenis_produk" class="form-control" required>
+                    <option value="besar" {% if data.jenis_produk == 'besar' %}selected{% endif %}>besar</option>
+                    <option value="kecil" {% if data.jenis_produk == 'kecil' %}selected{% endif %}>kecil</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Deskripsi Produk</label>
+                <textarea name="deskripsi_produk" class="form-control" required>{{ data.deskripsi_produk }}</textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Foto Lama</label><br>
+                <img src="{{ url_for('static', filename='img/' + data.foto_produk) }}" width="120">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ganti Foto</label>
+                <input type="file" name="foto_produk" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">Kembali</a>
+        </form>
+    </div>
+</body>
+</html>
