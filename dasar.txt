@@ -1,0 +1,22 @@
+📘 1. DASAR PYTHON (Syntax & Variabel)
+✅ Syntax dasar
+print("Hello World")
+
+
+✅ Variabel
+
+Variabel digunakan untuk menyimpan data.
+
+Contoh string:
+nama = "Eluvia"
+print(nama)
+Contoh angka:
+umur = 20
+print(umur)
+✅ Studi kasus nilai UTS & UAS
+uts = 80
+uas = 90
+
+nilai_akhir = (uts + uas) / 2
+
+print("Nilai akhir:", nilai_akhir)  
