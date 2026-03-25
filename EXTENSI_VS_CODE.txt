@@ -1,0 +1,41 @@
+Iya. Untuk Python + Flask + Bootstrap yang nyaman, ringan, dan ramah pemula, saya sarankan jangan terlalu banyak extension. Paket yang paling pas:
+
+Wajib install
+
+Python (ms-python.python)
+Ini extension utama Python di VS Code. Fungsinya mencakup dukungan IntelliSense, debugging, linting, refactoring, testing, dan integrasi tooling Python.
+Pylance (ms-python.vscode-pylance)
+Ini yang bikin autocomplete Python jauh lebih enak, cepat, dan jelas. Cocok buat pemula karena saran kodenya biasanya lebih akurat.
+Black Formatter (ms-python.black-formatter)
+Buat merapikan format Python otomatis, termasuk indentasi. Untuk file Python, ini lebih tepat daripada Prettier. VS Code juga memang mendokumentasikan formatter Python terpisah seperti Black.
+Prettier - Code formatter (esbenp.prettier-vscode)
+Pakai ini untuk HTML, CSS, JS, JSON, Markdown. Jadi untuk front-end Bootstrap sangat membantu. Tapi perlu dicatat, Prettier bukan formatter utama Python.
+
+Sangat disarankan untuk Flask
+5. Jinja (wholroyd.jinja) atau Better Jinja (samuelcolvin.jinjahtml)
+Karena Flask pakai template Jinja ({{ }} dan {% %}), extension ini membantu syntax highlight template. Kalau mau simpel, pilih Jinja. Kalau mau highlighting yang lebih kaya, pilih Better Jinja.
+
+Untuk Bootstrap
+6. Bootstrap IntelliSense (hossaini.bootstrap-intellisense)
+Ini bagus kalau kamu ingin autocomplete class Bootstrap saat nulis HTML. Ada autocomplete class, hover preview, dan dukungan beberapa versi Bootstrap.
+
+Bootstrap 5 Snippets
+Salah satu yang cukup enak dipakai adalah babobski.bootstrap-5-snippets. Cocok untuk pemula karena tinggal ketik snippet seperti form, table, navbar, modal, lalu struktur Bootstrap langsung muncul.
+
+Opsional
+8. Flask Snippets (CodeYard.flask-snippets)
+Berguna kalau kamu sering bikin potongan kode Flask dan Jinja. Untuk pemula ini lumayan membantu, tapi tidak wajib.
+
+Rekomendasi paling simpel
+
+Kalau saya pilihkan yang tidak ribet, install ini saja:
+
+Python
+Pylance
+Black Formatter
+Prettier
+Jinja
+Bootstrap IntelliSense
+Bootstrap 5 Snippets
+
+Itu sudah cukup nyaman untuk belajar Flask CRUD dengan template Bootstra
